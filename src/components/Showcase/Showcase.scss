@@ -1,0 +1,145 @@
+.showcase-container {
+	height: calc(100vh - 10rem);
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 6rem;
+	max-width: 140rem;
+	max-height: 80vh;
+
+	&:before,
+	&:after {
+		z-index: -1;
+		content: '';
+		background: rgb(176, 0, 178);
+		background: linear-gradient(
+			333deg,
+			rgba(176, 0, 178, 0.981127485173757) 0%,
+			#fd7f2c 100%
+		);
+		width: 35rem;
+		height: 35rem;
+		position: absolute;
+	}
+
+	&:before {
+		top: 0rem;
+		left: 0rem;
+		border-radius: 20px 0px 0px 0px;
+		clip-path: polygon(
+			50% 0%,
+			100% 0,
+			87% 12%,
+			100% 70%,
+			80% 90%,
+			50% 100%,
+			12% 89%,
+			0 100%,
+			0% 35%,
+			0 0
+		);
+	}
+	&:after {
+		bottom: 0rem;
+		right: 0rem;
+		border-radius: 0px 0px 20px 0px;
+		clip-path: polygon(
+			90% 11%,
+			100% 0,
+			100% 11%,
+			100% 70%,
+			100% 100%,
+			50% 100%,
+			21% 100%,
+			0 100%,
+			14% 86%,
+			0 0
+		);
+	}
+}
+
+.typeWriter-container {
+	color: white;
+	font-size: 6rem;
+}
+.navbar {
+	grid-row: 1/2;
+	grid-column: 1/3;
+	width: 100%;
+	height: 100%;
+
+	&-list {
+		display: flex;
+		flex-flow: row-reverse;
+		margin-right: 20%;
+		gap: 4rem;
+		align-items: center;
+
+		&__item {
+			list-style: none;
+		}
+
+		&__link {
+			text-decoration: none;
+			font-size: 2.3rem;
+			color: white;
+			position: relative;
+			padding: 0.5rem;
+			height: 0%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 0%;
+				width: 100%;
+				transition: all 0.25s ease-in;
+				z-index: -1;
+			}
+			&:hover:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: rgb(176, 0, 178);
+				background: linear-gradient(
+					333deg,
+					rgba(176, 0, 178, 0.981127485173757) 0%,
+					#fd7f2c 100%
+				);
+				height: 100%;
+				width: 100%;
+				transition: all 0.25s ease-in;
+			}
+		}
+	}
+}
+
+.showcase_introduction {
+	grid-row: 2/3;
+	grid-column: 1/2;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4rem;
+	height: 100%;
+	width: 85%;
+
+	&--bio {
+		font-size: 1.8rem;
+		color: white;
+	}
+}
+
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+	background-color: red;
+}

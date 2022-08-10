@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/Showcase/Showcase.css';
+import Showcase from './components/Showcase/Showcase';
+import Projects from './components/Projects/Projects';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ParallaxProvider>
+			<div className='App'>
+				<div className='main-container'>
+					<Showcase />
+					<Projects />
+				</div>
+			</div>
+		</ParallaxProvider>
+	);
 }
 
 export default App;
