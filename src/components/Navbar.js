@@ -1,10 +1,20 @@
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import './Showcase/Showcase.css';
+import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ style }) {
+	const [addSticky, setAddSticky] = useState(false);
+
+	useEffect(() => {
+		console.log('inside useEffect');
+		if (style) {
+			setAddSticky(style);
+		}
+	}, []);
+
 	return (
-		<nav className={`navbar`}>
+		<nav className={`${setAddSticky ? 'navbar sticky' : 'navbar'}`}>
 			<ul className='navbar-list'>
 				<li className='navbar-list__item'>
 					<a
