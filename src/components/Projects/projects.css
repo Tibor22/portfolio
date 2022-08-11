@@ -26,6 +26,12 @@
   margin-left: 2rem;
   margin-right: 2rem;
 }
+@media only screen and (max-width: 850px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .projects:before, .projects:after {
   z-index: -10;
   content: "";
@@ -58,6 +64,13 @@
   background-size: cover;
   border-radius: 16px;
 }
+@media only screen and (max-width: 850px) {
+  .project-img {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+  }
+}
 
 .project-desc {
   color: white;
@@ -87,6 +100,11 @@
   margin-top: 1rem;
   align-self: center;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 400px) {
+  .project-desc--link {
+    width: 80%;
+  }
 }
 .project-desc--link:hover {
   background-color: white;

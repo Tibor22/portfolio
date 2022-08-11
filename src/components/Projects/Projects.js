@@ -32,7 +32,13 @@ export default function Projects() {
 							<img src={postgres} alt='postgres logo' />
 							<img src={sass} alt='sass logo' />
 						</div>
-						<a href='#' className='project-desc--link'>
+						<a
+							href='https://github.com/Tibor22/Agency-App-Client'
+							target='_blank'
+							alt='Agency App'
+							rel='noreferrer'
+							className='project-desc--link'
+						>
 							TAKE ME TO THE APP
 						</a>
 					</div>
