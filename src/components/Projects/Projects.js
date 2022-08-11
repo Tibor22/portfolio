@@ -13,9 +13,7 @@ export default function Projects() {
 		<div className='projects-outer-container'>
 			<div id='projects' className='projects-container sm'>
 				<div className='project-1--container projects'>
-					<div className='project-1-img project-img'>
-						{/* <img src={AgencyApp} alt='Agency App' /> */}
-					</div>
+					<div className='project-1-img project-img'></div>
 					<div className='project-1-desc project-desc'>
 						<h2 className='project-desc--header'>AGENCY APP</h2>
 						<p className='project-desc--para'>

@@ -23,7 +23,7 @@ export default function Navbar({ style }) {
 						className='navbar-list__link'
 						href='https://github.com/Tibor22'
 					>
-						<img src={github} alt='' />
+						<img src={github} alt='gitHub' />
 					</a>
 				</li>
 				<li className='navbar-list__item'>
@@ -33,7 +33,7 @@ export default function Navbar({ style }) {
 						className='navbar-list__link'
 						href='https://www.linkedin.com/in/tibor-toth-53690b227/'
 					>
-						<img src={linkedin} alt='' />
+						<img src={linkedin} alt='linkedIn' />
 					</a>
 				</li>
 
