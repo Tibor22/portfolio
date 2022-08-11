@@ -52,7 +52,6 @@ export default function Contact() {
 
 	return (
 		<div className='contact-container ' id='contact'>
-			{isLoading && <Spinner variant='inverse' size='x-large'></Spinner>}
 			{openModal && (
 				<EmptyModal
 					setOpenModal={setOpenModal}
@@ -108,6 +107,11 @@ export default function Contact() {
 					</button>
 				</form>
 			</div>
+			{isLoading && (
+				<div className='contact-spinner'>
+					<Spinner size='large' />
+				</div>
+			)}
 		</div>
 	);
 }
