@@ -9,9 +9,15 @@ export default function EmptyModal({ openModal, setOpenModal, error }) {
 		setOpenModal(false);
 		return setIsOpen(false);
 	};
+
+	const styles = {
+		backgroundColor: '#2d2d2d',
+		color: '#fff',
+	};
 	return (
-		<div>
+		<div style={styles}>
 			<Modal
+				style={styles}
 				size='medium'
 				id='modal-1'
 				isOpen={isOpen}
@@ -20,7 +26,7 @@ export default function EmptyModal({ openModal, setOpenModal, error }) {
 				<p className='modal-title'>
 					{error && error.message}
 					{!error &&
-						'Thank you for contacting me, will come back to your shortly.'}
+						'Thank you for contacting me, I will come back to you shortly.'}
 				</p>
 			</Modal>
 		</div>
