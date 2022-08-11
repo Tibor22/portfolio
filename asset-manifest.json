@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.784a5203.css",
+    "main.css": "/portfolio/static/css/main.968c8a1e.css",
     "main.js": "/portfolio/static/js/main.943a0835.js",
     "static/media/Jobmediately2.png": "/portfolio/static/media/Jobmediately2.14c084c69d999f1a8ae8.png",
     "index.html": "/portfolio/index.html",
-    "main.784a5203.css.map": "/portfolio/static/css/main.784a5203.css.map",
+    "main.968c8a1e.css.map": "/portfolio/static/css/main.968c8a1e.css.map",
     "main.943a0835.js.map": "/portfolio/static/js/main.943a0835.js.map"
   },
   "entrypoints": [
-    "static/css/main.784a5203.css",
+    "static/css/main.968c8a1e.css",
     "static/js/main.943a0835.js"
   ]
 }
