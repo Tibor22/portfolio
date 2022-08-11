@@ -109,7 +109,7 @@ export default function Contact() {
 			</div>
 			{isLoading && (
 				<div className='contact-spinner'>
-					<Spinner size='large' />
+					<Spinner size='x-large' variant='inverse' />
 				</div>
 			)}
 		</div>

@@ -11,6 +11,7 @@ import Contact from '../Contact/Contact';
 export default function Projects() {
 	return (
 		<div className='projects-outer-container'>
+			<div className='projects-header'>MY PROJECTS</div>
 			<div id='projects' className='projects-container sm'>
 				<div className='project-1--container projects'>
 					<div className='project-1-img project-img'></div>
