@@ -48,7 +48,7 @@ export default function Navbar({ style }) {
 					</a>
 				</li>
 				<li className='navbar-list__item'>
-					<a href='#' className='navbar-list__link'>
+					<a href='#contact' className='navbar-list__link'>
 						Contact
 					</a>
 				</li>

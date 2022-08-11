@@ -11,11 +11,14 @@ export default function Showcase() {
 							<TypeWriter />
 						</div>
 						<div className='showcase_introduction--bio'>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-							assumenda, dignissimos unde autem eius aperiam recusandae vitae,
-							alias voluptates voluptatum vero eos odio! Tenetur inventore
-							fugiat doloremque maxime saepe. Cupiditate voluptatum quo id minus
-							molestiae
+							I am Tibor an aspiring Full Stack developer who is currently
+							living in the UK. I started to learn Web Development around 2
+							years ago, and it was love at first sight. I am passionate about
+							what I am doing and I give my best at every application I build.
+							<br />
+							<br />
+							If you interested to work with me please don't hesitate to contact
+							me I am happy to answer any questions you may have
 						</div>
 					</div>
 				</div>
