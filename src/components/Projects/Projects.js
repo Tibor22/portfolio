@@ -24,6 +24,23 @@ export default function Projects() {
 							applying jobs. It features Employer and Employee login and
 							registration.
 						</p>
+						<div className='repo-links'>
+							<a
+								href='https://github.com/Tibor22/Agency-App-Server'
+								target='_blank'
+								className='a-md'
+							>
+								Backend github repo
+							</a>
+							<a
+								href='https://github.com/Tibor22/Agency-App-Client'
+								className='a-md'
+								target='_blank'
+							>
+								Frontend github repo
+							</a>
+						</div>
+
 						<div className='project-desc--technologys'>
 							<p> Technologies I used:</p>
 							<img src={javascript} alt='javascript logo' />
@@ -34,7 +51,7 @@ export default function Projects() {
 							<img src={sass} alt='sass logo' />
 						</div>
 						<a
-							href='https://github.com/Tibor22/Agency-App-Client'
+							href='https://jobmediately.herokuapp.com'
 							target='_blank'
 							alt='Agency App'
 							rel='noreferrer'
